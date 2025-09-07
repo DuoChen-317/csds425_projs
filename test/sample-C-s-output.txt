@@ -1,0 +1,2 @@
+total IPs: 10
+private IPs: 1
