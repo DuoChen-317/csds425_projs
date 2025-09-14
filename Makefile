@@ -6,4 +6,4 @@ proj1.o: proj1.cpp
 
 clean:
 	rm -f *.o
-	rm -f proj1e
+	rm -f proj1
