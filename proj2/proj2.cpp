@@ -12,7 +12,7 @@ using namespace std;
 struct TraceRecord {
     uint32_t number_st;       // 4 bytes (seconds)
     uint32_t fraction_st;     // 4 bytes (microseconds)
-    unsigned char iphdr[20];  // 20 bytes (IPv4 header)
+    unsigned char iphdr[20];  
 };
 
 struct ParsedPacket {
@@ -93,7 +93,7 @@ vector<ForwardingTable_rule> parse_table(const string &filename){
     return forwarding_table;
 }
 
-// -----------------main AIP functions----------------------
+// -----------------main API functions----------------------
 
 void package_print_mode(const string &filename){
     vector<ParsedPacket> packets = parse_trace(filename);
